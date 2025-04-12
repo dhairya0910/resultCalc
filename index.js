@@ -20,7 +20,7 @@ let score = function(att, wro){
 let accuracy= function (att, wro){
     let total= 75;
     si = (att-wro)
-    accurate = (si/75)
+    accurate = (si/att)
 
     return accurate*100
 }
