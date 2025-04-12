@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JEE Main Result Summary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-indigo-200 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg space-y-6">
+    <h1 class="text-3xl font-bold text-center text-indigo-800">JEE Main Result Summary</h1>
+
+    <div class="grid grid-cols-2 gap-4 text-lg">
+      <div class="font-medium text-gray-700">Hello, <%=naam %></div>
+      <div id="name"></div>
+
+      <div class="font-medium text-gray-700">Total Questions:</div>
+      <div id="total">75</div>
+
+      <div class="font-medium text-gray-700">Attempted Questions:</div>
+      <div id="attempted"><%= attempt %></div>
+
+      <div class="font-medium text-gray-700">Wrong Answers:</div>
+      <div id="wrong"><%= wrong %></div>
+
+      <div class="font-medium text-gray-700">Final Score:</div>
+      <div id="score" class="text-green-600 font-semibold"><%= final %></div>
+
+      <div class="font-medium text-gray-700">Accuracy:</div>
+      <div id="accuracy" class="text-blue-600 font-semibold"><%= accur %></div>
+    </div>
+
+    <div class="text-center">
+      <button class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-xl transition">
+        Go Back
+      </button>
+    </div>
+  </div>
+</body>
+</html>
