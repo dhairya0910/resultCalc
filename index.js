@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname,"public")))
 
 let score = function(att, wro){
     let total= 300;
-    let positive = att*4;
+    let positive = (75-att)*4;
     let negative= wro*(-1);
     let fin = positive + negative;
     return fin
@@ -19,7 +19,9 @@ let score = function(att, wro){
 
 let accuracy= function (att){
     let total= 75;
-    accurate = (att/75)
+    si = (75-att)
+    accurate = (si/75)
+
     return accurate*100
 }
 
