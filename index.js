@@ -36,7 +36,7 @@ app.get("/",(req,res)=>{
 app.post("/",(req,res)=>{
     const {attempt, wrong, naam}= req.body
     const final = score(attempt,wrong)
-    const accur = accuracy(attempt)
+    const accur = accuracy(attempt,wrong)
     res.render("result",{ final, accur,naam, attempt, wrong })
 })
 
