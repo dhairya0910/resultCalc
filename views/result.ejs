@@ -32,10 +32,10 @@
        <% if (final>250){ %>
         <div class="font-medium text-gray-700">Accuracy:</div>
       <div id="accuracy" class="text-blue-600 font-semibold">Outstanding Bro! 🔥🔥</div>
-        <% } else if(200<final<250){  %>
+        <% } else if(final > 200 && final <= 250){  %>
           <div class="font-medium text-gray-700">Accuracy:</div>
           <div id="accuracy" class="text-blue-600 font-semibold">Good One Bro! 👍👍</div>
-        <% } else if(100<final<200) {%> 
+        <% } else if(final > 100 && final <= 200) {%> 
           <div class="font-medium text-gray-700">Accuracy:</div>
           <div id="accuracy" class="text-blue-600 font-semibold"> Good but rock on the next one!👏</div>
           <% else{ %>
